@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"dianlianggpio\main.o"
+"dianlianggpio\startup_stm32f103xb.o"
+"dianlianggpio\gpio.o"
+"dianlianggpio\stm32f1xx_it.o"
+"dianlianggpio\stm32f1xx_hal_msp.o"
+"dianlianggpio\stm32f1xx_hal_gpio_ex.o"
+"dianlianggpio\stm32f1xx_hal.o"
+"dianlianggpio\stm32f1xx_hal_rcc.o"
+"dianlianggpio\stm32f1xx_hal_rcc_ex.o"
+"dianlianggpio\stm32f1xx_hal_gpio.o"
+"dianlianggpio\stm32f1xx_hal_dma.o"
+"dianlianggpio\stm32f1xx_hal_cortex.o"
+"dianlianggpio\stm32f1xx_hal_pwr.o"
+"dianlianggpio\stm32f1xx_hal_flash.o"
+"dianlianggpio\stm32f1xx_hal_flash_ex.o"
+"dianlianggpio\stm32f1xx_hal_exti.o"
+"dianlianggpio\system_stm32f1xx.o"
+--strict --scatter "dianlianggpio\dianlianggpio.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dianlianggpio.map" -o dianlianggpio\dianlianggpio.axf

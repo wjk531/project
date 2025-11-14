@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dingshiqizhongduan\startup_stm32f103xb.o"
+"dingshiqizhongduan\main.o"
+"dingshiqizhongduan\gpio.o"
+"dingshiqizhongduan\tim.o"
+"dingshiqizhongduan\stm32f1xx_it.o"
+"dingshiqizhongduan\stm32f1xx_hal_msp.o"
+"dingshiqizhongduan\stm32f1xx_hal_gpio_ex.o"
+"dingshiqizhongduan\stm32f1xx_hal_tim.o"
+"dingshiqizhongduan\stm32f1xx_hal_tim_ex.o"
+"dingshiqizhongduan\stm32f1xx_hal.o"
+"dingshiqizhongduan\stm32f1xx_hal_rcc.o"
+"dingshiqizhongduan\stm32f1xx_hal_rcc_ex.o"
+"dingshiqizhongduan\stm32f1xx_hal_gpio.o"
+"dingshiqizhongduan\stm32f1xx_hal_dma.o"
+"dingshiqizhongduan\stm32f1xx_hal_cortex.o"
+"dingshiqizhongduan\stm32f1xx_hal_pwr.o"
+"dingshiqizhongduan\stm32f1xx_hal_flash.o"
+"dingshiqizhongduan\stm32f1xx_hal_flash_ex.o"
+"dingshiqizhongduan\stm32f1xx_hal_exti.o"
+"dingshiqizhongduan\system_stm32f1xx.o"
+--strict --scatter "dingshiqizhongduan\dingshiqizhongduan.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dingshiqizhongduan.map" -o dingshiqizhongduan\dingshiqizhongduan.axf
